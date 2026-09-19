@@ -23,7 +23,7 @@ export const projects: Project[] = [
     // learnings: ['TODO — Something you learned or found hard while building this'],
     githubUrl: 'https://github.com/Faaiz-16/AI-Interview-Resume-Platform',
     liveUrl: '',
-    image: '/images/projects/ai_interview.png',
+    image: '/images/projects/ai_interview.webp',
     imageAlt: 'Screenshot of the AI Interview Preparation Home Page',
     featured: true,
   },
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/Faaiz-16/Stock-Market-Dashboard',
     liveUrl: '',
-    image: '/images/projects/stock_market.png',
+    image: '/images/projects/stock_market.webp',
     imageAlt: 'Homepage of Stock Market Dashboard',
   },
   {
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/Faaiz-16/Image-Recognition-System',
     liveUrl: '',
-    image: '/images/projects/image_recognition.png',
+    image: '/images/projects/image_recognition.webp',
     imageAlt: 'Image Recognition System homepage',
   },
 ];
