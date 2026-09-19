@@ -48,7 +48,7 @@ export const siteConfig = {
       'full stack developer India',
     ],
     /** TODO: set to the deployed domain (no trailing slash). */
-    url: 'https://vercel.com/faaiz-16s-projects/faaiz-ali-portfolio',
+    url: 'https://faaiz-ali-portfolio.vercel.app/',
     /** Social share image. 1200x630px. Put yours in public/images/general/. */
     ogImage: '/images/general/og-image.png',
     /** Used for the Twitter/X card. Leave '' if you have no account. */
