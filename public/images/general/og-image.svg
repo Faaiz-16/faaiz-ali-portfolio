@@ -14,13 +14,13 @@
 
   <rect x="80" y="86" width="72" height="72" rx="16" fill="#6366f1" />
   <text x="116" y="123" text-anchor="middle" dominant-baseline="central"
-        font-family="ui-monospace, monospace" font-size="30" font-weight="700" fill="#fff">FA</text>
+        font-family="'JetBrains Mono', ui-monospace, monospace" font-size="30" font-weight="700" fill="#fff">FA</text>
 
   <text x="80" y="290" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="700" fill="#f5f6fa">
     Faaiz Ali
   </text>
-  <text x="80" y="356" font-family="ui-monospace, monospace" font-size="30" fill="#8b8df0">
-    Final-Year MCA Student | Software Developer
+  <text x="80" y="356" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="30" fill="#8b8df0">
+    Final-Year MCA Student | Python Developer
   </text>
   <text x="80" y="428" font-family="Inter, system-ui, sans-serif" font-size="26" fill="#9aa0af">
     Python · JavaScript · Java · SQL · Git
