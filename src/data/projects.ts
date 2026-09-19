@@ -44,7 +44,7 @@ export const projects: Project[] = [
     features: ['TODO — Key feature', 'TODO — Key feature'],
     githubUrl: 'https://github.com/Faaiz-16/rajasthan-travel-guide',
     liveUrl: 'https://rajasthan-travel-guide.vercel.app/',
-    image: '/images/projects/rajasthan_travel_guide.png',
+    image: '/images/projects/rajasthan_travel_guide.webp',
     imageAlt: 'Rajasthan Travel Guide Homepage',
     featured: true,
   },
