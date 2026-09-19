@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
     role: 'Python Developer Intern',
     company: 'Codec Technologies',
     period: 'June 15, 2026 - July 14, 2026',
-    location: '',
+    location: 'Mumbai',
     type: 'Internship',
     description:
       'Worked as a Python Developer Intern, gaining practical experience in Python programming, application development, data processing, and problem-solving. During the internship, I worked on real-world development tasks and built Python-based projects to strengthen my understanding of software development.',
