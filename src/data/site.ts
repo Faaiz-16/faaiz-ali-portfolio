@@ -34,7 +34,7 @@ export const siteConfig = {
 
   seo: {
     /** Browser tab title and the headline in Google results. */
-    title: 'Faaiz Ali — Software Developer & Final-Year MCA Student',
+    title: 'Faaiz Ali — Python Developer & Final-Year MCA Student',
     /** Google shows roughly the first 155 characters. */
     description:
       'Portfolio of Faaiz Ali, a final-year MCA student at Amity University Rajasthan building software with Python, Java and JavaScript. See projects, skills and resume.',
@@ -47,14 +47,13 @@ export const siteConfig = {
       'Flask',
       'full stack developer India',
     ],
-    /** TODO: set to the deployed domain (no trailing slash). */
     url: 'https://faaiz-ali-portfolio.vercel.app/',
     /** Social share image. 1200x630px. Put yours in public/images/general/. */
     ogImage: '/images/general/og-image.png',
     /** Used for the Twitter/X card. Leave '' if you have no account. */
     twitterHandle: '',
     /** Shown in the JSON-LD "Person" structured data. */
-    jobTitle: 'Software Developer',
+    jobTitle: 'Python Developer',
   },
 
   facts: [
