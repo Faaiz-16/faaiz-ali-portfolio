@@ -1,0 +1,2 @@
+Put your projects images in this folder, then reference them from src/data/
+as: /images/projects/your-file-name.png

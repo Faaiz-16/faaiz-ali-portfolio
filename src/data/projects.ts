@@ -1,0 +1,103 @@
+import type { Project } from './types.ts';
+
+export const projects: Project[] = [
+  {
+    slug: 'ai-interview-resume-analyzer',
+    title: 'AI Interview Preparation & Resume Analyzer Platform',
+    description:
+      'InterviewVerse AI is a full-stack web platform that helps job seekers prepare for interviews using AI. Users upload resumes for automated analysis, generate role-specific interview questions, and practice mock interviews with instant AI scoring and feedback.',
+    categories: ['AI', 'Full Stack'],
+    technologies: ['React', 'Node.js', 'MySQL', 'REST APIs', 'JWT'],
+    problem: 'Many candidates struggle to improve their resumes and interview skills without expensive coaching or generic online resources. There was a need for one platform where users could upload a resume, get AI-driven feedback, practice realistic interviews, and track progress, while admins could monitor platform usage.',
+    solution: 'I designed and built InterviewVerse AI as a modular full-stack application. The React frontend handles resume upload, dashboards, mock interviews, and an AI chat assistant; the Express REST API connects to MySQL for user data and sessions and to Groq/OpenAI for analysis and scoring. I added secure authentication (JWT, bcrypt, forgot-password via email OTP), admin-only access, session auto-logout, and light/dark theme support to make the product usable and production-minded.',
+    features: ['TODO — First thing the app can do', 'TODO — Second thing the app can do'],
+    // learnings: ['TODO — Something you learned or found hard while building this'],
+    githubUrl: 'https://github.com/Faaiz-16/AI-Interview-Resume-Platform',
+    liveUrl: '',
+    image: '/images/projects/ai_interview.png',
+    imageAlt: 'Screenshot of the AI Interview Preparation Home Page',
+    featured: true,
+  },
+  {
+    slug: 'student-tech-hub',
+    title: 'StudentTechHub',
+    description: 'StudentTechHub is a full-stack programming, AI, career and internship portal for students, built with Next.js, TypeScript, Prisma and MySQL. It includes an admin CMS, secure authentication, full-text search, and a student dashboard for saving content and tracking job applications, with SEO built into every page.',
+    categories: ['Web', 'Full Stack'],
+    technologies: ['Next.js', 'React', 'Typescript', 'MySQL', 'Prisma'],
+    problem: 'SEO is usually taught as theory or applied by hand to a few pages, so students rarely see how it works on a real site with growing content. Students also have to hunt across separate sites for tutorials, career guidance and internships.',
+    solution: 'I built one database-driven site with an admin CMS, so SEO happens automatically. Publishing an article or job generates its clean URL, canonical tag, metadata, structured data and sitemap entry with no manual work. I used server-rendered Next.js pages so search engines get complete HTML immediately, and built secure authentication and ownership-scoped access control myself. I developed it in tested phases, from database design through to search and SEO.',
+    features: ['TODO — Key feature', 'TODO — Key feature'],
+    githubUrl: 'https://github.com/Faaiz-16/studenttechhub',
+    liveUrl: '',
+    image: '/images/projects/studenttechhub.png',
+    imageAlt: 'Student Tech hub Home Page',
+    featured: true,
+  },
+  {
+    slug: 'rajasthan-travel-guide',
+    title: 'Rajasthan Travel Guide',
+    description: 'Rajasthan Travel Guide is a full-stack travel platform covering 10 Rajasthan destinations, with places to visit, local food, day-by-day itineraries and travel tips. It includes user accounts with saved bookmarks, an admin CMS for managing all content, and Razorpay-powered voluntary support payments, deployed live on Vercel.',
+    categories: ['Web', 'Full Stack'],
+    technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Prisma', 'Razorpay', 'Google Analytics', 'Google Search Console'],
+    problem: 'Travel information about Rajasthan is scattered across blogs, videos and social posts, and it goes stale quickly. Entry fees, timings and prices change, but most sources don\'t say when they were last checked. Static sites also make it hard to keep large amounts of content consistent, searchable and up to date.',
+    solution: 'I built it as a database-driven Next.js application instead of a static site. PostgreSQL with Prisma models the content (destinations, attractions, food, itineraries, posts), so one schema drives every page. An admin panel lets content be added and edited without touching code, and listings show a "last updated" notice for time-sensitive details. I wrote the authentication myself (bcrypt hashing, JWT sessions in httpOnly cookies) so I understand exactly how sessions work. I made the pages SEO-friendly with structured data, sitemaps and metadata. I added rate limiting, security headers and a Content Security Policy, then covered the code with unit, integration and end-to-end tests. For payments I integrated Razorpay directly, with server-side signature verification and webhook handling that is safe against replays and duplicate events. I deployed it to Vercel with a Neon Postgres database and verified everything against the live site, not only locally.',
+    features: ['TODO — Key feature', 'TODO — Key feature'],
+    githubUrl: 'https://github.com/Faaiz-16/rajasthan-travel-guide',
+    liveUrl: 'https://rajasthan-travel-guide.vercel.app/',
+    image: '/images/projects/rajasthan_travel_guide.png',
+    imageAlt: 'Rajasthan Travel Guide Homepage',
+    featured: true,
+  },
+  {
+    slug: 'password-manager',
+    title: 'Password Manager',
+    description: 'A desktop password manager built with Python and Tkinter. It generates strong random passwords, copies them to the clipboard, saves them per website in a local JSON file, and lets you look up saved credentials with one click.',
+    categories: ['Python'],
+    technologies: ['Python', 'Tkinter'],
+    problem: 'Most people reuse weak, memorable passwords across sites because creating and remembering unique ones is tedious. I wanted a simple tool that removes that friction.',
+    solution: 'I built the password manager as a Tkinter desktop app, starting with a simple interface for entering a website, an email/username and a password. For password generation, I combined random letters, numbers and symbols in varying lengths, then shuffled them so the result is unpredictable. The password is placed in the entry field and copied to the clipboard with pyperclip, so it can be pasted straight into a signup form. For storage, I saved each entry as a website-keyed record in a local JSON file. I used exception handling (try/except/else/finally) to handle a missing data file, and I validated inputs so empty entries can\'t be saved. Finally, I added a search feature that looks up a website in the JSON data and shows the saved email and password in a popup. It also shows a clear message if the file or the website\'s entry doesn\'t exist.',
+    features: ['TODO — Key feature', 'TODO — Key feature'],
+    githubUrl: 'https://github.com/Faaiz-16/password-manager',
+    liveUrl: '',
+    image: '/images/projects/password_manager.png',
+    imageAlt: 'Password Manager window',
+  },
+  {
+    slug: 'stock-market-dashboard',
+    title: 'Stock Market Dashboard',
+    description: 'A real-time stock market dashboard built with Python and Streamlit that fetches live quotes and historical data, processes it with Pandas, and displays interactive Plotly charts, statistics, and period analytics for any stock symbol.',
+    categories: ['Python', 'Web'],
+    technologies: ['Stremlit', 'Pandas', 'Plotly'],
+    problem: 'Stock market data is spread across multiple APIs and raw formats, making it hard to quickly analyze price trends, volume, and key metrics in one place. There was also a need for a reliable, user-friendly tool that could handle API failures, invalid symbols, and varying date ranges without breaking the experience.',
+    solution: 'I built a modular Python pipeline ~ fetch → process → analyze → render — using EOD Historical Data as the primary API with Yahoo Finance as a fallback. Pandas handles OHLCV cleaning, moving averages, and daily returns; Plotly powers six interactive chart types; and Streamlit provides the UI with session caching and clear error handling. The project was developed incrementally across eight modules, each with its own tests, and deployed live on Streamlit Cloud.',
+    features: ['TODO — Key feature', 'TODO — Key feature'],
+    githubUrl: 'https://github.com/Faaiz-16/Stock-Market-Dashboard',
+    liveUrl: '',
+    image: '/images/projects/stock_market.png',
+    imageAlt: 'Homepage of Stock Market Dashboard',
+  },
+  {
+    slug: 'image-recognition-system',
+    title: 'Image Recognition System',
+    description: 'Built a full-stack image recognition web app that classifies uploaded photos into 10 object categories using a CNN trained on CIFAR-10. The system delivers real-time predictions with confidence scores through a Flask API and a responsive web interface.',
+    categories: ['AI', 'Python'],
+    technologies: ['Flask', 'TensorFlow', 'Keras', 'OpenCV'],
+    problem: 'Image classification models are often trained in isolation, with no easy way for users to upload images and get instant, understandable results. The goal was to turn a trained CNN into a practical, end-to-end application—not just a model file.',
+    solution: 'I built the full ML pipeline from scratch: preprocessed the CIFAR-10 dataset, trained a custom CNN with TensorFlow/Keras, and exposed inference through a Flask REST API. On the frontend, I added image upload, live preview, and animated confidence bars with top-3 predictions. I also added a CLI script, integration tests, and error handling for invalid files and large uploads.',
+    features: ['TODO — Key feature', 'TODO — Key feature'],
+    githubUrl: 'https://github.com/Faaiz-16/Image-Recognition-System',
+    liveUrl: '',
+    image: '/images/projects/image_recognition.png',
+    imageAlt: 'Image Recognition System homepage',
+  },
+];
+
+/** Every category that is actually used, so no empty filter button is shown. */
+export const projectCategories = Array.from(
+  new Set(projects.flatMap((project) => project.categories)),
+).toSorted();
+
+/** Look up a single project for the /projects/:slug detail page. */
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find((project) => project.slug === slug);
+}

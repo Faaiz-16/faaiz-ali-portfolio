@@ -1,0 +1,2 @@
+Put your general images in this folder, then reference them from src/data/
+as: /images/general/your-file-name.png
