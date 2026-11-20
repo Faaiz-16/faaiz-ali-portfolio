@@ -1,6 +1,6 @@
-# Faaiz Ali — Developer Portfolio
+# Faaiz Ali — Software QA Engineer Portfolio
 
-Personal portfolio website for Faaiz Ali, a final-year MCA student (Amity University Rajasthan) building software with Python and JavaScript. It presents projects, skills, experience, education, certifications and a downloadable resume in a single responsive page.
+Personal portfolio website for Faaiz Ali, a Software QA Engineer and final-year MCA student (Amity University Rajasthan) focused on manual, functional and API testing. It presents projects, skills, experience, education, certifications and a downloadable resume in a single responsive page.
 
 All content lives in plain TypeScript data files, so updating the portfolio means editing data, not components.
 

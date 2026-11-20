@@ -2,12 +2,32 @@ import type { Project } from './types.ts';
 
 export const projects: Project[] = [
   {
+    slug: 'scamshield',
+    title: 'ScamShield',
+    description:
+      'A fintech-security tool that detects UPI and SMS scams in English, Hindi and Hinglish using a rule engine and ML models, backed by 430 Pytest tests and deployed 24/7 with Docker on GCP.',
+    categories: ['AI', 'Python'],
+    technologies: ['Python', 'FastAPI', 'MySQL', 'PyTorch', 'Docker', 'GCP', 'Pytest'],
+    problem: 'UPI and SMS scams target people in English, Hindi and Hinglish, and a detector that only works in one language, or raises too many false alarms, is not useful in practice.',
+    solution: 'I built a scam detector that combines a rule engine with ML models behind a FastAPI service, storing data in MySQL. I treated testing as a first-class part of the project: I wrote 430 Pytest tests across the API, rule engine, bot and data pipeline, and measured precision, recall and false-alarm rates separately for each language. I deployed it 24/7 with Docker on GCP and verified the deployment with smoke and reboot tests.',
+    features: [
+      'Detects UPI and SMS scam messages in English, Hindi and Hinglish',
+      'Combines a rule engine with PyTorch ML models',
+      '430 Pytest tests covering the API, rule engine, bot and data pipeline',
+      'Precision, recall and false-alarm rates measured for each language',
+      'Deployed 24/7 with Docker on GCP, checked by smoke and reboot tests',
+    ],
+    githubUrl: 'https://github.com/Faaiz-16/ScamShield',
+    liveUrl: '',
+    featured: true,
+  },
+  {
     slug: 'ai-interview-resume-analyzer',
     title: 'AI Interview Preparation & Resume Analyzer Platform',
     description:
       'InterviewVerse AI is a full-stack web platform that helps job seekers prepare for interviews using AI. Users upload resumes for automated analysis, generate role-specific interview questions, and practice mock interviews with instant AI scoring and feedback.',
     categories: ['AI', 'Full Stack'],
-    technologies: ['React', 'Node.js', 'MySQL', 'REST APIs', 'JWT'],
+    technologies: ['React', 'Node.js', 'Express', 'MySQL', 'Groq LLM API', 'JWT'],
     problem: 'Many candidates struggle to improve their resumes and interview skills without expensive coaching or generic online resources. There was a need for one platform where users could upload a resume, get AI-driven feedback, practice realistic interviews, and track progress, while admins could monitor platform usage.',
     solution: 'I designed and built InterviewVerse AI as a modular full-stack application. The React frontend handles resume upload, dashboards, mock interviews, and an AI chat assistant; the Express REST API connects to MySQL for user data and sessions and to Groq/OpenAI for analysis and scoring. I added secure authentication (JWT, bcrypt, forgot-password via email OTP), admin-only access, session auto-logout, and light/dark theme support to make the product usable and production-minded.',
     features: [
@@ -19,6 +39,8 @@ export const projects: Project[] = [
       'AI chat assistant',
       'User dashboard with progress stats and interview history, and an admin dashboard for platform activity',
       'Automatic session logout and light/dark theme support',
+      'Tested JWT login and role-based admin access, plus file upload checks for format and a 5 MB size limit',
+      'Wrote and ran 22 API test cases, all passing',
     ],
     // learnings: ['TODO — Something you learned or found hard while building this'],
     githubUrl: 'https://github.com/Faaiz-16/AI-Interview-Resume-Platform',
@@ -103,7 +125,7 @@ export const projects: Project[] = [
     title: 'Stock Market Dashboard',
     description: 'A real-time stock market dashboard built with Python and Streamlit that fetches live quotes and historical data, processes it with Pandas, and displays interactive Plotly charts, statistics, and period analytics for any stock symbol.',
     categories: ['Python', 'Web'],
-    technologies: ['Stremlit', 'Pandas', 'Plotly'],
+    technologies: ['Streamlit', 'Pandas', 'Plotly'],
     problem: 'Stock market data is spread across multiple APIs and raw formats, making it hard to quickly analyze price trends, volume, and key metrics in one place. There was also a need for a reliable, user-friendly tool that could handle API failures, invalid symbols, and varying date ranges without breaking the experience.',
     solution: 'I built a modular Python pipeline ~ fetch → process → analyze → render — using EOD Historical Data as the primary API with Yahoo Finance as a fallback. Pandas handles OHLCV cleaning, moving averages, and daily returns; Plotly powers six interactive chart types; and Streamlit provides the UI with session caching and clear error handling. The project was developed incrementally across eight modules, each with its own tests, and deployed live on Streamlit Cloud.',
     features: [
@@ -117,7 +139,7 @@ export const projects: Project[] = [
       'Built as eight modules, each with its own tests, and deployed on Streamlit Cloud',
     ],
     githubUrl: 'https://github.com/Faaiz-16/Stock-Market-Dashboard',
-    liveUrl: '',
+    liveUrl: 'https://faaizali-stock-market-dashboard.streamlit.app/',
     image: '/images/projects/stock_market.webp',
     imageAlt: 'Homepage of Stock Market Dashboard',
   },

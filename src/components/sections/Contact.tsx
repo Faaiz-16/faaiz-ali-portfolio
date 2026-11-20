@@ -30,7 +30,7 @@ export function Contact() {
     <Section
       id="contact"
       title="Get in touch"
-      subtitle="If you are hiring for a software or Python developer role, or just want to point out something I got wrong on this site, I would like to hear from you."
+      subtitle="If you are hiring for a QA or software tester role, or just want to point out something I got wrong on this site, I would like to hear from you."
     >
       <div
         className={

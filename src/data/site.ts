@@ -4,22 +4,22 @@ export const siteConfig = {
   /** Short initials used for the logo mark and favicon. */
   initials: 'FA',
   /** Job title / direction you are targeting. */
-  role: 'Python Developer',
+  role: 'Software QA Engineer',
   /** The line that appears directly under your name in the hero. */
-  headline: 'Final-Year MCA Student | Python Developer',
+  headline: 'Software QA Engineer | Final-Year MCA Student',
   tagline:
-    'I build practical software with Python, and I am currently finishing my MCA at Amity University Rajasthan. I am looking for a software or Python developer role where I can keep learning by shipping real things.',
+    'Final-year MCA student (CGPA 9.61) with a developer\'s understanding of how software breaks. I design test cases, log defects in JIRA and validate APIs with Postman and Pytest, and I am looking for a Junior QA / Software Tester role.',
 
   email: 'alisyedfaaiz@gmail.com',
   /** Optional. Leave as an empty string '' to hide the phone number entirely. */
   phone: '',
   /** Optional. Leave as an empty string '' to hide your location. */
-  location: 'Rajasthan, India',
-  availability: 'Open to Software developer / Python developer roles from 2027',
+  location: 'Jaipur, Rajasthan, India',
+  availability: 'Open to Junior QA / Software Tester roles',
 
   links: {
     github: 'https://github.com/Faaiz-16',
-    linkedin: 'https://www.linkedin.com/in/faaiz-ali-953661312/',
+    linkedin: 'https://www.linkedin.com/in/faaiz-ali-dev/',
     /** Optional extras — leave '' to hide. */
     twitter: '',
     leetcode: '',
@@ -34,18 +34,21 @@ export const siteConfig = {
 
   seo: {
     /** Browser tab title and the headline in Google results. */
-    title: 'Faaiz Ali — Python Developer & Final-Year MCA Student',
+    title: 'Faaiz Ali — Software QA Engineer & Final-Year MCA Student',
     /** Google shows roughly the first 155 characters. */
     description:
-      'Portfolio of Faaiz Ali, a final-year MCA student at Amity University Rajasthan building software with Python, Java and JavaScript. See projects, skills and resume.',
+      'Portfolio of Faaiz Ali, a Software QA Engineer and final-year MCA student at Amity University Rajasthan. Manual, functional and API testing with Postman, Pytest and JIRA.',
     keywords: [
       'Faaiz Ali',
-      'Python developer',
-      'software developer',
+      'Software QA Engineer',
+      'software tester',
+      'manual testing',
+      'API testing',
+      'Postman',
+      'Pytest',
+      'JIRA',
       'MCA student',
-      'React portfolio',
-      'Flask',
-      'full stack developer India',
+      'QA engineer India',
     ],
     url: 'https://faaiz-ali-portfolio.vercel.app/',
     /** Social share image. 1200x630px. Put yours in public/images/general/. */
@@ -53,13 +56,13 @@ export const siteConfig = {
     /** Used for the Twitter/X card. Leave '' if you have no account. */
     twitterHandle: '',
     /** Shown in the JSON-LD "Person" structured data. */
-    jobTitle: 'Python Developer',
+    jobTitle: 'Software QA Engineer',
   },
 
   facts: [
-    { label: 'Degree', value: 'MCA', detail: 'Amity University Rajasthan' },
+    { label: 'Degree', value: 'MCA', detail: 'Amity University Rajasthan · CGPA 9.61' },
     { label: 'Graduating', value: '2027', detail: 'Batch of 2027' },
-    { label: 'Focus', value: 'Python', detail: 'Backend & applications' },
+    { label: 'Focus', value: 'QA', detail: 'Manual, functional & API testing' },
   ],
 } as const;
 

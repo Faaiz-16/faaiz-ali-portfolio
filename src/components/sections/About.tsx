@@ -7,9 +7,9 @@ import { Reveal } from '../ui/Reveal';
 import { Section } from '../ui/Section';
 
 const paragraphs = [
-  'I am in the final year of my MCA at Amity University Rajasthan, after finishing a BCA before that. Most of what I know has come from building things and then finding out what I got wrong, which is still how I prefer to learn.',
-  'My main language is Python, and I use it for backend work, automation and small tools. Alongside that I work with Java and SQL, and I am gradually moving from writing standalone scripts to building full applications: a frontend, an API behind it and a database underneath.',
-  'Right now I am focused on getting properly good at the fundamentals by writing readable code, using Git the way a team would, and understanding how an application actually runs once it leaves my laptop. I am looking for a role where I can do that alongside people who have done it for longer.',
+  'I am in the final year of my MCA at Amity University Rajasthan (CGPA 9.61), after finishing a BCA before that. I started out building software, and that is exactly what made me good at testing it: I know where developers cut corners, because I have cut them myself.',
+  'I do manual, functional and API testing on platforms I have built and shipped. That means designing test cases, logging and tracking defects in JIRA, validating endpoints in Postman, and writing automated tests with Pytest. For ScamShield, a fintech-security tool that detects UPI and SMS scams, I wrote 430 tests and measured precision, recall and false alarms for each language.',
+  'I work with the SDLC, STLC and the bug life cycle in an Agile/Scrum way, and I use MySQL queries to check that the data behind a feature is actually right. I am looking for a Junior QA / Software Tester role where I can keep finding bugs before users do, alongside people who have done it for longer.',
 ];
 
 export function About() {
@@ -39,8 +39,8 @@ export function About() {
           <blockquote className="mt-8 flex gap-3 rounded-card border-l-2 border-accent bg-surface-2/60 py-4 pr-5 pl-4">
             <Quote aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-accent" />
             <p className="text-sm leading-relaxed text-muted italic">
-              I would rather show you a project I can explain line by line than a list of
-              technologies I have only read about.
+              I would rather show you a bug I found and how I proved it than a list of
+              tools I have only read about.
             </p>
           </blockquote>
         </Reveal>

@@ -1,5 +1,7 @@
 import type { ComponentType } from 'react';
 import {
+  Bug,
+  ClipboardCheck,
   Cloud,
   Code2,
   Database,
@@ -18,6 +20,8 @@ export const iconMap = {
   wrench: Wrench,
   cloud: Cloud,
   sparkles: Sparkles,
+  bug: Bug,
+  checklist: ClipboardCheck,
 } satisfies Record<string, LucideIcon>;
 
 type IconName = keyof typeof iconMap;
