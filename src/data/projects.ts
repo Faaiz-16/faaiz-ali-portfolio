@@ -19,6 +19,8 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/Faaiz-16/ScamShield',
     liveUrl: '',
+    image: '/images/projects/scamshield.webp',
+    imageAlt: 'ScamShield scam trends dashboard showing messages checked, likely scams and common scam types',
     featured: true,
   },
   {
